@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GroupMeal</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="resetpassword">Reset Password</string>
+    <string name="login">Login</string>
+    <string name="donthaveaccount">Dont\'t have an account? Sign Up </string>
+    <string name="signup">Sign Up</string>
+    <string name="haveaccount">Have an Account? Log In</string>
+    <string name="profile">Profile</string>
+    <string name="orsignupwith">Or Sign Up with</string>
+    <string name="welcome">Welcome</string>
+</resources>
