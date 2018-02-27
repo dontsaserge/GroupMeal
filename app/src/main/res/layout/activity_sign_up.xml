@@ -69,6 +69,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:id="@+id/password"
+            android:drawableStart="@drawable/lock_icon"
+            android:drawableLeft="@drawable/lock_icon"
             android:textColor="@color/green"
             android:inputType="textPassword"
             android:background="@drawable/roundedittext"/>

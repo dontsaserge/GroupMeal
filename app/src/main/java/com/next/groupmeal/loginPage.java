@@ -8,6 +8,7 @@ import android.net.NetworkInfo;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import java.sql.*;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -27,6 +28,7 @@ import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 
 public class loginPage extends AppCompatActivity implements View.OnClickListener{
 
@@ -38,6 +40,7 @@ public class loginPage extends AppCompatActivity implements View.OnClickListener
     private TextView SignUpTextView;
     private static final String TAG = "GroupMeal";
     private TextView ErrorTextView;
+
 
     private FirebaseAuth mAuth;
 
@@ -54,6 +57,7 @@ public class loginPage extends AppCompatActivity implements View.OnClickListener
 
         findViewById(R.id.signUptextView).setOnClickListener(this);
         findViewById(R.id.loginbtn).setOnClickListener(this);
+
     }
     @Override
     public void onStart(){
@@ -117,6 +121,10 @@ public class loginPage extends AppCompatActivity implements View.OnClickListener
         NetworkInfo activeNetwork = cm != null ? cm.getActiveNetworkInfo() : null;
 
         return (activeNetwork != null) && activeNetwork.isConnectedOrConnecting();
+
+
+
+
     }
 
     //Check the connectivity
@@ -129,6 +137,8 @@ public class loginPage extends AppCompatActivity implements View.OnClickListener
             ErrorTextView.setText("No Internet Connection");
         }
     }
+
+
 
     //Launch the clickable button/text
     @Override
@@ -147,4 +157,6 @@ public class loginPage extends AppCompatActivity implements View.OnClickListener
         }
 
     }
+
+
 }

@@ -8,4 +8,6 @@
     <color name="white">#fff</color>
     <color name="buttoncolor">#34495E</color>
     <color name="redError">#d63031</color>
+    <color name="menubackgrouncolor">#006266</color>
+    <color name="skyblue">#4BECF3</color>
 </resources>

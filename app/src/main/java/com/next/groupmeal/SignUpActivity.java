@@ -63,6 +63,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         if(email.isEmpty()){
 
+
             mEmail.setError("This field is required");
             mEmail.requestFocus();
             return;
