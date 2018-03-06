@@ -3,20 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/background"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context="com.next.groupmeal.Create_Group">
+    android:background="@color/background"
+    tools:context="com.next.groupmeal.Contact_info">
 
 
     <LinearLayout
-        android:padding="35dp"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:paddingStart="22dp"
+            android:paddingLeft="22dp"
+            android:paddingTop="22dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -31,27 +33,42 @@
 
         </LinearLayout>
 
-        <EditText
+        <TextView
+            android:paddingStart="22dp"
+            android:paddingLeft="22dp"
+            android:paddingTop="22dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/groupname"
-            android:hint="@string/namegroup"
+            android:id="@+id/group_title"
             android:textColor="@color/skyblue"
-            android:textColorHint="@color/skyblue"
-            android:background="@drawable/roundedittext"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="10dp"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"/>
+
 
         <Button
             android:layout_width="match_parent"
             android:background="@drawable/buttonstyle"
-            android:text="@string/next"
-            android:id="@+id/nextStep"
+            android:text="@string/addmember"
+            android:id="@+id/loadContact"
             android:textColor="@color/skyblue"
             android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continuebtn"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/continubtn"
+            android:visibility="gone"/>
+
+        <ListView
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myContactList"
+            android:cacheColorHint="@color/skyblue"/>
+
     </LinearLayout>
 
 </LinearLayout>

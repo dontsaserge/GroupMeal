@@ -111,6 +111,7 @@ public class loginPage extends AppCompatActivity implements View.OnClickListener
 
     }
 
+
         //Check the internect connection
 
     private boolean isInternetAvailabe(){
